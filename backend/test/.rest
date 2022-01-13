@@ -1,0 +1,51 @@
+###
+
+GET  http://localhost:3001/api/cliente
+
+###
+
+POST  http://localhost:3001/api/cliente HTTP/1.1
+content-type: application/json
+
+{
+    "nombre": "Marco Antonio",
+    "cedula": "001-030303-1000M",
+    "email": null,
+    "celular": 86811601, 
+    "telefono": null,
+    "direccion": null
+}
+
+###
+PUT http://localhost:3001/api/cliente/00003-CLI HTTP/1.1
+content-type: application/json
+
+{
+    "nombre": "Marcos Antonio",
+    "cedula": "001-030303-1000M",
+    "email": "endosoza1@gmail.com",
+    "celular": 86811601, 
+    "telefono": null,
+    "direccion": null
+}
+
+
+### 
+
+GET http://localhost:3001/api/cliente/00002-CLI
+
+
+###
+DELETE http://localhost:3001/api/cliente/00004-CLI  HTTP/1.1
+
+
+###
+GET http://localhost:3001/api/categoria
+
+###
+POST  http://localhost:3001/api/categoria HTTP/1.1
+content-type: application/json
+
+{
+    "nombre": "Submarco"
+}
